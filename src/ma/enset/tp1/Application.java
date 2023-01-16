@@ -58,6 +58,7 @@ public class Application {
 				break;
 			case "5":
 				iMetier.saveAll();
+				System.out.println("saved!!");
 				break;
 			case "6":
 				System.err.print("vous avez quitter le programme");
@@ -77,7 +78,8 @@ public class Application {
 		System.out.println("2. pour rechercher un produit par son id");
 		System.out.println("3. pour ajouter un nouveau produit dans la liste");
 		System.out.println("4. pour supprimer un produit par id");
-		System.out.println("5. pour quitter ce programme");
+		System.out.println("5. pour sauvegarder la list des produit");
+		System.out.println("6. pour quitter ce programme");
 		System.out.println("----------------------------------------------------------------------------");
 		System.out.println();
 	}
