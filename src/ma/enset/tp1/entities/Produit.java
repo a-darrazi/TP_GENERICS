@@ -1,8 +1,9 @@
 package ma.enset.tp1.entities;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class Produit {
+public class Produit implements Serializable {
 	private Long id;
 	private String nom;
 	private String marque;

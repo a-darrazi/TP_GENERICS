@@ -10,7 +10,7 @@ import ma.enset.tp1.service.MetierProduitImpl;
 public class Application {
 
 	public static void main(String[] args) {
-		IMetier<Produit> iMetier = new MetierProduitImpl();
+		IMetier<Produit,Long> iMetier = new MetierProduitImpl();
 		Scanner scanner = new Scanner(System.in);
 
 		while (true) {
@@ -57,6 +57,9 @@ public class Application {
 				iMetier.delete(idp);
 				break;
 			case "5":
+				iMetier.saveAll();
+				break;
+			case "6":
 				System.err.print("vous avez quitter le programme");
 				System.exit(0);
 				break;
